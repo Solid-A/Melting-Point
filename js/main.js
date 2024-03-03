@@ -26,7 +26,7 @@ click.addEventListener( "click", function() {
     let kao = document.getElementById("kao").value;
 
     let arr = [silica, quartz, po_feld, so_feld, ca_feld, ca_ca, so_ca, po_ca, alu, bar, dolo, cole, zin, zir, bor, tita, silli, mulli, kao];
-    let arr2 = [1710, 1710, 1300, 1300, 1500, 850, 850, 850, 2000, 1360, 600, 2000, 1975, 1855, 850, 1750, 1550, 1810, 1500];
+    let arr2 = [1710, 1710, 1300, 1300, 1500, 1300, 1300, 1300, 2000, 1360, 600, 2000, 1975, 1855, 850, 1750, 1550, 1810, 1500];
     
     let sum = 0;
     let sum2 = 0;
