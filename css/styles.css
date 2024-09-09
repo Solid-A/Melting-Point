@@ -1,193 +1,164 @@
-body{
+  /* General Styles */
+body {
 	margin: 0;
 	padding: 0;
-}
-
-* {
-	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-	box-sizing: border-box;
-}
-
-#header {
-	text-align: center;
-	color: #fffffff6;
-	display: block;
-	width: 100%; 
-	background: #360033;
-	background: -webkit-linear-gradient(to right, #0b8793, #360033); 
-	background: linear-gradient(to right, #0b8793, #360033);
-	padding: 20px;
-	box-shadow: 0 5px 15px 0 rgb(0, 0, 0);
-}
-
-#header h1 {
-	font-size: 2.5em;
-	text-shadow: 0 0 5px rgb(0, 0, 0);
-	margin: 0;
-}
-
-.main {
-	background-image: url(./csm_Prium-EcoFlexHRA_5c48959b29.jpg);
-	background-size: cover;
+	background-color: hwb(65 96% 0%);
+	/* background-image: url(./Glass-manufacturing_dreamstime_xl_42756081.jpg);
 	background-repeat: no-repeat;
-	background-position: center;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
-	align-items: center;
-	gap: 30px;
-	width: 100%;
-	margin: auto;
-	padding: 50px;
-}
-
-#formula{
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	gap: 20px;
-}
-
-.material {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	width: 25%;
-	min-width: 340px;
-	color: rgb(0, 0, 0);
-	font-weight: bold;
+	background-size: cover;
+	background-position: bottom; */
+	/* color: #ffffff; */
+	color: #333;
+	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  #header h1 {
+	text-align: center;
 	margin: 0;
-	padding: 5px;
-	background-color: rgb(252, 252, 252);
-	border-radius: 5px;
-	box-shadow: -3px 3px 5px 3px rgb(58, 58, 58);
-}
+	text-shadow: 0 0 1px rgb(0, 0, 0);
+  }
 
-.material div{
+  #out h1 {
+	text-align: center;
+	color: #000000;
+	text-shadow: 0 0 5px wheat;
+  }
+  
+  #out h2 {
+	text-align: center;
+	color: #000000;
+	text-shadow: 0 0 5px wheat;
+  }
+  
+  /* Header */
+  #header {
+	/* background-color: #3479a3; */
+	background-color: #3799d6;
+	color: rgb(255, 255, 255);
+	padding: 20px;
+	box-shadow: 0 0 3px 1px black;
+  }
+  
+  
+  /* Main Content */
+  .main {
+	/* background-color: #7c74746e; */
+	padding: 20px;
+	max-width: 1200px;
+	margin: 0 auto;
+  }
+  
+  .material {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 20px;
+  }
+  
+  .material div {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	white-space: nowrap;
-	width: 100%;
-	margin: 2px;
-	padding: 1px;
-}
-
-#out {
-	margin: 0 auto 105px;
-	padding: 0;
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	gap: 30px;
-}
-
-#out #out1, #out2 {
-	text-align: center;
-	width: 30%;
-	min-width: 20em;
-	min-height: 130px;
-	background: #0b8793;
-	border-radius: 5px;
-	margin: 0;
-	padding: 0;
-	box-shadow: -4px 4px 5px 0px  rgb(0, 0, 0);
-}
-
-#out h1 {
-	/* color: rgb(250, 250, 250); */
-	color: rgb(255, 255, 255);
-	margin-bottom: 0;
-	text-shadow: -2px 2px 2px rgb(0, 0, 0);
-}
-
-#out h2{
-	color: rgb(255, 255, 255);
-	text-shadow: 1px 1px 2px black;
-	display: inline-block;
-}
-
-input {
-	max-width: 100px;
-	outline-style: none;
-	padding: 2px;
-	font-weight: bolder;
-	border-radius: 5px;
-	margin: 0%;
-}
-
-button {
-	margin: 0;
-	width: 200px;
-	border: none;
-	cursor: pointer;
-	text-align: center;
-	color: rgb(255, 255, 255);
-	text-shadow: 1px 1px 2px black;
-	font-size: 1.2em;
+  }
+  
+  .material label {
+	margin-right: 10px;
 	font-weight: bold;
-	padding: 20px;
-	box-shadow: 0px 0px 15px 0px rgb(236, 0, 0);
-	background-image: linear-gradient(
-  45deg,
-  hsl(240deg 100% 20%) 0%,
-  hsl(248deg 100% 21%) 13%,
-  hsl(257deg 100% 23%) 19%,
-  hsl(265deg 100% 24%) 24%,
-  hsl(273deg 100% 26%) 28%,
-  hsl(282deg 100% 27%) 32%,
-  hsl(290deg 100% 29%) 35%,
-  hsl(298deg 100% 30%) 39%,
-  hsl(307deg 100% 31%) 42%,
-  hsl(315deg 100% 33%) 45%,
-  hsl(323deg 100% 34%) 48%,
-  hsl(332deg 100% 36%) 52%,
-  hsl(340deg 100% 37%) 55%,
-  hsl(348deg 100% 39%) 58%,
-  hsl(357deg 100% 40%) 61%,
-  hsl(5deg 100% 41%) 65%,
-  hsl(13deg 100% 43%) 68%,
-  hsl(22deg 100% 44%) 72%,
-  hsl(30deg 100% 46%) 76%,
-  hsl(38deg 100% 47%) 81%,
-  hsl(47deg 100% 49%) 87%,
-  hsl(55deg 100% 50%) 100%
-);
-}
-
-footer {
-	width: 100%;
-	height:auto;
-	background: #ffffff;
-	box-shadow: 0px -2px 3px 0px rgb(145, 145, 145);
-}
-
-#foot {
-	width: 60%;
-	height: 100%;
-	margin: auto;
+  }
+  
+  input[type="number"] {
+	width: 100px;
 	padding: 5px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+  }
+  
+  /* Button */
+  #click {
+	text-align: center;
+	margin: 20px 0;
+  }
+  
+  #click button {
+	padding: 10px 20px;
+	background-color: #5488f8;
+	color: rgb(255, 255, 255);
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.589);
+  }
+  
+  #click button:hover {
+	background-color: #0056b3;
+  }
+  
+  /* Output Section */
+  #out {
 	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
-	flex-wrap: wrap;
-	align-items: center;
+	justify-content: space-between;
+	margin-top: 30px;
+  }
+  
+  #out div {
+	background-color: #f85454;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.589);
+	width: 45%;
+	text-align: center;
+  }
+  
+  /* Footer */
+  footer {
+	width: 100%;
+	background-color: #003049;
 	color: white;
-}
-
-#foot a {
-	color: #000000;
+	padding: 10px 0;
+	text-align: center;
+	height: 79px;
+	max-height: 79px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-size: 1.1em;
-	text-decoration: none;
-	padding: 5px;
-}
+  }
 
-#foot svg {
-	margin-left: 10px;
-}
+  footer a {
+	font-size: large;
+	font-weight: bold;
+	color: white;
+	margin: 10px;
+	text-decoration: none;
+  }
+  
+  footer a:hover {
+	text-decoration: underline;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+	.material {
+	  grid-template-columns: 1fr;
+	}
+  
+	#out {
+	  flex-direction: column;
+	  justify-content: center;
+	  align-items: center;
+	}
+  
+	#out div {
+	  width: 100%;
+	  margin-bottom: 20px;
+	}
+  }
+  
+  @media (max-width: 480px) {
+	#header h1 {
+	  font-size: 1.5rem;
+	}
+  
+	#click button {
+	  width: 100%;
+	}
+  }
+  
