@@ -3,11 +3,10 @@ body {
 	margin: 0;
 	padding: 0;
 	background-color: hwb(65 96% 0%);
-	/* background-image: url(./Glass-manufacturing_dreamstime_xl_42756081.jpg);
+	/* background-image: url(./fritas_p1.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: bottom; */
-	/* color: #ffffff; */
+	background-position: right; */
 	color: #333;
 	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
@@ -32,7 +31,6 @@ body {
   
   /* Header */
   #header {
-	/* background-color: #3479a3; */
 	background-color: #3799d6;
 	color: rgb(255, 255, 255);
 	padding: 20px;
@@ -42,7 +40,7 @@ body {
   
   /* Main Content */
   .main {
-	/* background-color: #7c74746e; */
+	/* background-color: #6fa0cea6; */
 	padding: 20px;
 	max-width: 1200px;
 	margin: 0 auto;
