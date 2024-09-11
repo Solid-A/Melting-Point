@@ -11,6 +11,12 @@ body {
 	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
   
+  #header img {
+	position: absolute;
+	top: 0.5rem;
+	left: 1rem;
+  }
+
   #header h1 {
 	text-align: center;
 	margin: 0;
@@ -145,15 +151,18 @@ body {
 	}
   
 	#out div {
-	  width: 100%;
+	  width: 90%;
 	  margin-bottom: 20px;
 	}
   }
   
   @media (max-width: 480px) {
-	#header h1 {
+ 	#header h1 {
+	  margin-left: 2rem;	
 	  font-size: 1.5rem;
+	  width: 90%;
 	}
+
   
 	#click button {
 	  width: 100%;

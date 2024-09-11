@@ -20,44 +20,47 @@ document.querySelector("button").addEventListener("click", function () {
     const sillimanite = parseFloat(document.getElementById("silli").value) || 0;
     const mullite = parseFloat(document.getElementById("mulli").value) || 0;
     const kaolin = parseFloat(document.getElementById("kao").value) || 0;
+
+    // استدعاء المعادلات
+    // يمكن أن تضيف حساب الوزن الإجمالي هنا إذا أردت
+    let totalWeight = 
+      silica + quartz + potassiumFeldspar + sodiumFeldspar + calciumFeldspar +
+      calciumCarbonate + sodiumCarbonate + potassiumCarbonate + aluminiumOxide +
+      bariumCarbonate + dolomite + colemanite + zincOxide + zirconiumSilicate +
+      zirconiumOxide + titaniumDioxide + borax + sillimanite + mullite + kaolin;
   
+      document.getElementById("outer2").textContent = totalWeight.toFixed(1) + " kg";
+
     // معادلة حساب درجة حرارة الانصهار (قيمة تقريبية استناداً إلى المواد)
     let meltingPoint = 
-      silica * 1713 + 
-      quartz * 1670 +
-      potassiumFeldspar * 1150 + 
-      sodiumFeldspar * 1115 + 
-      calciumFeldspar * 1550 + 
-      calciumCarbonate * 1200 + 
-      sodiumCarbonate * 1584 + 
-      potassiumCarbonate * 1200 + 
-      aluminiumOxide * 2072 + 
-      bariumCarbonate * 1360 + 
-      dolomite * 1600 + 
-      colemanite * 1050 + 
-      zincOxide * 1975 + 
-      zirconiumSilicate * 2550 + 
-      zirconiumOxide * 2700 + 
-      titaniumDioxide * 1843 + 
-      borax * 1365 + 
-      sillimanite * 1545 + 
-      mullite * 1840 + 
-      kaolin * 1830;
+      (silica / totalWeight) * 1713 + 
+      (quartz / totalWeight) * 1670 +
+      (potassiumFeldspar / totalWeight) * 1150 + 
+      (sodiumFeldspar / totalWeight) * 1115 + 
+      (calciumFeldspar / totalWeight)* 1550 + 
+      (calciumCarbonate / totalWeight)* 825 + 
+      (sodiumCarbonate / totalWeight)* 851 + 
+      (potassiumCarbonate / totalWeight)* 891 + 
+      (aluminiumOxide / totalWeight)* 2072 + 
+      (bariumCarbonate / totalWeight)* 1360 + 
+      (dolomite / totalWeight)* 1600 + 
+      (colemanite / totalWeight)* 742 + 
+      (zincOxide / totalWeight)* 1975 + 
+      (zirconiumSilicate / totalWeight)* 2550 + 
+      (zirconiumOxide / totalWeight)* 2700 + 
+      (titaniumDioxide / totalWeight)* 1843 + 
+      (borax / totalWeight)* 743 + 
+      (sillimanite / totalWeight)* 1545 + 
+      (mullite / totalWeight)* 1840 + 
+      (kaolin / totalWeight)* 1830;
   
-      // يمكن أن تضيف حساب الوزن الإجمالي هنا إذا أردت
-      let totalWeight = 
-        silica + quartz + potassiumFeldspar + sodiumFeldspar + calciumFeldspar +
-        calciumCarbonate + sodiumCarbonate + potassiumCarbonate + aluminiumOxide +
-        bariumCarbonate + dolomite + colemanite + zincOxide + zirconiumSilicate +
-        zirconiumOxide + titaniumDioxide + borax + sillimanite + mullite + kaolin;
     
-      document.getElementById("outer2").textContent = totalWeight.toFixed(1) + " kg";
 
     // إذا لم يتم إدخال أي مواد
     if (meltingPoint === 0) {
       meltingPoint = "No materials entered";
     } else {
-      meltingPoint = (meltingPoint / totalWeight).toFixed(0); // لحساب المتوسط
+      meltingPoint = meltingPoint.toFixed(0); // لحساب المتوسط
     }
   
     // عرض النتيجة
