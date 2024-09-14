@@ -1,5 +1,6 @@
   /* General Styles */
 body {
+	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 	background-color: hwb(65 96% 0%);
@@ -12,13 +13,12 @@ body {
   }
   
   #header img {
-	position: absolute;
-	top: 0.5rem;
-	left: 1rem;
+	vertical-align: middle;
   }
 
   #header h1 {
-	text-align: center;
+	vertical-align: middle;
+	display: inline-block;
 	margin: 0;
 	text-shadow: 0 0 1px rgb(0, 0, 0);
   }
@@ -36,11 +36,15 @@ body {
   }
   
   /* Header */
-  #header {
+  header {
 	background-color: #3799d6;
-	color: rgb(255, 255, 255);
-	padding: 20px;
 	box-shadow: 0 0 3px 1px black;
+	text-align: center;
+  }
+
+  #header {
+	color: rgb(255, 255, 255);
+	padding: 5px;
   }
   
   
@@ -48,6 +52,7 @@ body {
   .main {
 	/* background-color: #6fa0cea6; */
 	padding: 20px;
+	min-height: 83vh;
 	max-width: 1200px;
 	margin: 0 auto;
   }
@@ -104,7 +109,7 @@ body {
   }
   
   #out div {
-	background-color: #f85454;
+	background-color: #ff6767;
 	padding: 20px;
 	border-radius: 10px;
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.589);
@@ -114,28 +119,28 @@ body {
   
   /* Footer */
   footer {
-	width: 100%;
 	background-color: #003049;
 	color: white;
-	padding: 10px 0;
+	padding: 10px;
 	text-align: center;
-	height: 79px;
-	max-height: 79px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-  }
+}
 
-  footer a {
+footer a {
 	font-size: large;
 	font-weight: bold;
 	color: white;
-	margin: 10px;
+	margin: 2rem;
 	text-decoration: none;
+	text-wrap: nowrap;
   }
   
   footer a:hover {
 	text-decoration: underline;
+  }
+
+  svg {
+	vertical-align: middle;
+	margin-left: 0.5rem;
   }
   
   /* Responsive Styles */
@@ -158,9 +163,7 @@ body {
   
   @media (max-width: 480px) {
  	#header h1 {
-	  margin-left: 2rem;	
 	  font-size: 1.5rem;
-	  width: 90%;
 	}
 
   
