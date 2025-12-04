@@ -22,27 +22,49 @@ document.querySelector("button").addEventListener("click", function () {
     const kaolin = parseFloat(document.getElementById("kao").value) || 0;
   
     // معادلة حساب درجة حرارة الانصهار (قيمة تقريبية استناداً إلى المواد)
+    // let meltingPoint = 
+    //   silica * 1713 + 
+    //   quartz * 1670 +
+    //   potassiumFeldspar * 1150 + 
+    //   sodiumFeldspar * 1115 + 
+    //   calciumFeldspar * 1550 + 
+    //   calciumCarbonate * 1200 + 
+    //   sodiumCarbonate * 1584 + 
+    //   potassiumCarbonate * 1200 + 
+    //   aluminiumOxide * 2072 + 
+    //   bariumCarbonate * 1360 + 
+    //   dolomite * 1600 + 
+    //   colemanite * 1050 + 
+    //   zincOxide * 1975 + 
+    //   zirconiumSilicate * 2550 + 
+    //   zirconiumOxide * 2700 + 
+    //   titaniumDioxide * 1843 + 
+    //   borax * 1365 + 
+    //   sillimanite * 1545 + 
+    //   mullite * 1840 + 
+    //   kaolin * 1830;
+
     let meltingPoint = 
       silica * 1713 + 
       quartz * 1670 +
-      potassiumFeldspar * 1150 + 
-      sodiumFeldspar * 1115 + 
+      potassiumFeldspar * 1250 + 
+      sodiumFeldspar * 1150 + 
       calciumFeldspar * 1550 + 
-      calciumCarbonate * 1200 + 
+      calciumCarbonate * 825 + 
       sodiumCarbonate * 1584 + 
       potassiumCarbonate * 1200 + 
       aluminiumOxide * 2072 + 
       bariumCarbonate * 1360 + 
-      dolomite * 1600 + 
-      colemanite * 1050 + 
+      dolomite * 900 + 
+      colemanite * 900 + 
       zincOxide * 1975 + 
       zirconiumSilicate * 2550 + 
-      zirconiumOxide * 2700 + 
+      zirconiumOxide * 2715 + 
       titaniumDioxide * 1843 + 
-      borax * 1365 + 
+      borax * 750 + 
       sillimanite * 1545 + 
       mullite * 1840 + 
-      kaolin * 1830;
+      kaolin * 1100;
   
       // يمكن أن تضيف حساب الوزن الإجمالي هنا إذا أردت
       let totalWeight = 
